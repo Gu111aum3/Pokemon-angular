@@ -8,19 +8,16 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class AppComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-     }
-
+ 
   pokemons = ['Bulbizarre', 'Salamèche', 'Carapuce'];
 
-  ngOninit() {
+  ngOnInit(): void {
     console.log(this.pokemons);
     this.selectPokemon('bulbizarre');
   }
 
   selectPokemon(pokemonName: string) {
-    console.log(`vous vaez cliqué sur le pokemon ${pokemonName}`);
+    console.log(`vous avez cliqué sur le pokemon ${pokemonName}`);
     
 }
 
